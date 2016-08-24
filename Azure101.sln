@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day 1", "Day 1", "{AA001238-AE81-468A-9ED5-0F7FA649E995}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day 2", "Day 2", "{27CE4A7B-302A-41B4-91F8-39ADB06C4C46}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day 3", "Day 3", "{1D5FA2A8-224F-4221-A768-26FEB22382B1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day 4", "Day 4", "{AFB4034B-5CFA-4D08-B1F3-872FDF0C78B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day 5", "Day 5", "{31D1E482-C539-486A-AEEB-D21121CF6170}"
+EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "SampleAzureResourceGroup", "SampleAzureResourceGroup\SampleAzureResourceGroup.deployproj", "{F5B38D7F-20F3-4CB0-8F0F-7D9754BD907E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoUniversity", "E-F sample\ContosoUniversity\ContosoUniversity.csproj", "{264E21D6-4024-4A53-B1BE-1CD42F3348FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5B38D7F-20F3-4CB0-8F0F-7D9754BD907E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5B38D7F-20F3-4CB0-8F0F-7D9754BD907E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5B38D7F-20F3-4CB0-8F0F-7D9754BD907E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5B38D7F-20F3-4CB0-8F0F-7D9754BD907E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{264E21D6-4024-4A53-B1BE-1CD42F3348FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{264E21D6-4024-4A53-B1BE-1CD42F3348FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{264E21D6-4024-4A53-B1BE-1CD42F3348FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{264E21D6-4024-4A53-B1BE-1CD42F3348FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F5B38D7F-20F3-4CB0-8F0F-7D9754BD907E} = {AA001238-AE81-468A-9ED5-0F7FA649E995}
+		{264E21D6-4024-4A53-B1BE-1CD42F3348FE} = {27CE4A7B-302A-41B4-91F8-39ADB06C4C46}
+	EndGlobalSection
+EndGlobal
