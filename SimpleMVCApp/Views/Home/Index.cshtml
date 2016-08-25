@@ -27,8 +27,8 @@
         
         $.post('/home/search',
         {
-            q: q,
-          countyFacet: countyFacet
+            q: q
+         // countyFacet: countyFacet
         },
         function (data) {
             var searchResultsHTML = "<tr><td>FEATURE NAME</td><td>FEATURE CLASS</td>";
