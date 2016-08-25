@@ -18,6 +18,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContosoUniversity", "E-F sample\ContosoUniversity\ContosoUniversity.csproj", "{264E21D6-4024-4A53-B1BE-1CD42F3348FE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demo Script", "Demo Script", "{915CEC05-45F0-4ADB-9248-DA8233F4A487}"
+	ProjectSection(SolutionItems) = preProject
+		PushDataSample.txt = PushDataSample.txt
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataIndexer", "DataIndexer\DataIndexer.csproj", "{93F03001-B08F-4DA7-966E-C1625E3968CB}"
 EndProject
