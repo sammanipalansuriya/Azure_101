@@ -46,31 +46,31 @@
                 searchResultsHTML += "<td>" + data.Results[i].Document.LOCATION.Latitude + ", " + data.Results[i].Document.LOCATION.Longitude + "</td>";
              //   searchResultsHTML += "<td>" + data.Results[i].Document.DESCRIPTION + "</td>";
 
-                // Hit hightlighting
-                if (data.Results[i].Highlights != null)
-                    searchResultsHTML += "<td>" + data.Results[i].Highlights.DESCRIPTION + "</td>";
-                else
-                    searchResultsHTML += "<td>" + data.Results[i].Document.DESCRIPTION + "</td>";
+                //// Hit hightlighting
+                //if (data.Results[i].Highlights != null)
+                //    searchResultsHTML += "<td>" + data.Results[i].Highlights.DESCRIPTION + "</td>";
+                //else
+                //    searchResultsHTML += "<td>" + data.Results[i].Document.DESCRIPTION + "</td>";
                 searchResultsHTML += "<td>" + data.Results[i].Document.HISTORY + "</td></tr>";
             }
           
            
-           $("#searchCount").html(data.Count + " total results");
+        //   $("#searchCount").html(data.Count + " total results");
             $("#searchResults").html(searchResultsHTML);
 
             ////Adding Facects
 
-            var facetResultsHTML = "<table><tr><th>County Name</th></tr>";
-            for (var i = 0; i < data.Facets.COUNTY_NAME.length; i++) {
-                facetResultsHTML += "<tr><td><a href='javascript:void(0);' onclick='Search(\"" + data.Facets["COUNTY_NAME"][i].Value + "\");'>" + data.Facets["COUNTY_NAME"][i].Value + "</a> (" + data.Facets["COUNTY_NAME"][i].Count + ")</tr></td>";
-            }
-            facetResultsHTML += "</table>";
-            facetResultsHTML += "<table><tr><th>Elevation (ft)</th></tr>";
-            for (var i = 0; i < data.Facets.ELEV_IN_FT.length; i++) {
-                facetResultsHTML += "<tr><td>" + data.Facets["ELEV_IN_FT"][i].Value + " (" + data.Facets["ELEV_IN_FT"][i].Count + ")</tr></td>";
-            }
-            facetResultsHTML += "</table>";
-            $("#facetResults").html(facetResultsHTML);
+            //var facetResultsHTML = "<table><tr><th>County Name</th></tr>";
+            //for (var i = 0; i < data.Facets.COUNTY_NAME.length; i++) {
+            //    facetResultsHTML += "<tr><td><a href='javascript:void(0);' onclick='Search(\"" + data.Facets["COUNTY_NAME"][i].Value + "\");'>" + data.Facets["COUNTY_NAME"][i].Value + "</a> (" + data.Facets["COUNTY_NAME"][i].Count + ")</tr></td>";
+            //}
+            //facetResultsHTML += "</table>";
+            //facetResultsHTML += "<table><tr><th>Elevation (ft)</th></tr>";
+            //for (var i = 0; i < data.Facets.ELEV_IN_FT.length; i++) {
+            //    facetResultsHTML += "<tr><td>" + data.Facets["ELEV_IN_FT"][i].Value + " (" + data.Facets["ELEV_IN_FT"][i].Count + ")</tr></td>";
+            //}
+            //facetResultsHTML += "</table>";
+            //$("#facetResults").html(facetResultsHTML);
 
 
         });
@@ -103,7 +103,6 @@
 
 
 <script type="text/javascript">
-    debugger;
     // Code for Typeahead
     $(function () {
         var usgs = new Bloodhound({
@@ -127,7 +126,6 @@
 
         // Initialize the Bloodhound suggestion engine
         usgs.initialize();
-        debugger;
         // Instantiate the Typeahead UI
         $("#aa").typeahead(null, {
             displayKey: 'value',

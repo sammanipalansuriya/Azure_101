@@ -42,20 +42,20 @@ namespace SimpleSearchMVCApp
                     //  SearchMode = SearchMode.All,
 
                     #region Limit number of fields retured
-                    Select = new List<String>()
-                    {
-                        "FEATURE_ID",
-                        "FEATURE_NAME",
-                        "FEATURE_CLASS",
-                        "STATE_ALPHA",
-                        "COUNTY_NAME",
-                        "ELEV_IN_M",
-                        "ELEV_IN_FT",
-                        "MAP_NAME",
-                        "LOCATION",
-                        "DESCRIPTION",
-                        "HISTORY"
-                    },
+                    //Select = new List<String>()
+                    //{
+                    //    "FEATURE_ID",
+                    //    "FEATURE_NAME",
+                    //    "FEATURE_CLASS",
+                    //    "STATE_ALPHA",
+                    //    "COUNTY_NAME",
+                    //    "ELEV_IN_M",
+                    //    "ELEV_IN_FT",
+                    //    "MAP_NAME",
+                    //    "LOCATION",
+                    //    "DESCRIPTION",
+                    //    "HISTORY"
+                    //},
                     // Add count
                     IncludeTotalResultCount = true,
 
@@ -63,14 +63,14 @@ namespace SimpleSearchMVCApp
 
 
                     #region Add search highlights
-                    HighlightFields = new List<String>() {"DESCRIPTION"},
-                    HighlightPreTag = "<font size=\"5\" color=\"blue\">",
-                    HighlightPostTag = "</font>",
+                    //HighlightFields = new List<String>() {"DESCRIPTION"},
+                    //HighlightPreTag = "<font size=\"5\" color=\"blue\">",
+                    //HighlightPostTag = "</font>",
 
                     #endregion
 
                     #region Add facets
-                    Facets = new List<String>() {"COUNTY_NAME", "ELEV_IN_FT,interval:50"},
+                    //Facets = new List<String>() {"COUNTY_NAME", "ELEV_IN_FT,interval:50"},
 
                     #endregion
                 };
@@ -78,13 +78,13 @@ namespace SimpleSearchMVCApp
                 #region Add filter
 
                 if (countyFacet != "")
-                    sp.Filter = "COUNTY_NAME eq '" + countyFacet + "'";
+                    //sp.Filter = "COUNTY_NAME eq '" + countyFacet + "'";
 
                 #endregion
 
                 #region Add Scoring Profile
 
-                sp.ScoringProfile = "geonamescroing";
+                //sp.ScoringProfile = "geonamescroing";
 
                 #endregion
 
